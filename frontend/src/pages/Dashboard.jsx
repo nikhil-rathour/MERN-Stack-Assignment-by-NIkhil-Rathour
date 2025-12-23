@@ -21,15 +21,21 @@ function Dashboard() {
   }, []);
 
   return (
-    <div>
+    <div className="min-h-screen bg-gray-900">
       <Navbar />
-      <div className="container mx-auto p-4">
-        <h2 className="text-2xl font-bold mb-4">My Tasks</h2>
+      <div className="container mx-auto p-6">
+        <h2 className="text-3xl font-bold mb-6 text-white">My Tasks</h2>
         <TaskForm refresh={fetchTasks} />
-        <div>
-          {tasks.map((task) => (
-            <TaskItem key={task._id} task={task} refresh={fetchTasks} />
-          ))}
+        <div className="space-y-4">
+          {tasks.length === 0 ? (
+            <div className="text-center py-8">
+              <p className="text-gray-400 text-lg">No tasks yet. Create your first task above!</p>
+            </div>
+          ) : (
+            tasks.map((task) => (
+              <TaskItem key={task._id} task={task} refresh={fetchTasks} />
+            ))
+          )}
         </div>
       </div>
     </div>
