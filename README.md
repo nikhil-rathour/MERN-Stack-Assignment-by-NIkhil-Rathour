@@ -73,8 +73,8 @@ npm install
 
 **Environment Variables** (`.env`):
 ```env
-VITE_API_URL=http://localhost:5000
-# For production: 
+VITE_DEPLOYED_BACKEND_URL=http://localhost:5000
+
 ```
 
 **Start Frontend**:
@@ -83,40 +83,3 @@ npm run dev    # Development
 npm run build  # Production build
 ```
 
-### 4. Access Application
-- **Frontend**: http://localhost:5173
-- **Backend**: http://localhost:5000
-- **Live Demo**: https://mern-stack-assignment-by-n-ikhil-ra-alpha.vercel.app/
-
-## Project Structure
-
-```
-MERN-Stack-Assignment-by-NIkhil-Rathour/
-├── frontend/
-│   ├── src/
-│   │   ├── components/     # Reusable components
-│   │   ├── pages/         # Page components
-│   │   ├── context/       # React context
-│   │   ├── services/      # API services
-│   │   └── App.jsx        # Main app component
-│   ├── .env               # Frontend environment variables
-│   └── package.json       # Frontend dependencies
-├── backend/
-│   ├── config/
-│   │   └── db.js          # Database connection
-│   ├── controllers/
-│   │   ├── authController.js  # Authentication logic
-│   │   └── taskController.js  # Task CRUD operations
-│   ├── middleware/
-│   │   └── authMiddleware.js  # JWT verification
-│   ├── models/
-│   │   ├── User.js        # User schema
-│   │   └── Task.js        # Task schema
-│   ├── routes/
-│   │   ├── authRoutes.js  # Authentication routes
-│   │   └── taskRoutes.js  # Task routes
-│   ├── .env               # Backend environment variables
-│   ├── package.json       # Backend dependencies
-│   └── server.js          # Main server file
-└── README.md              # Project documentation
-```
