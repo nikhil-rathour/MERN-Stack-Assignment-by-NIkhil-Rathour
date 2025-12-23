@@ -29,7 +29,7 @@ A modern React frontend for the MERN Stack Task Management application built wit
    npm install
    ```
 
-2. Set up environment variables in `.env.example`:
+2. Set up environment variables in `.env`:
    ```
    VITE_DEPLOYED_BACKEND_URL=http://localhost:5000
    ```

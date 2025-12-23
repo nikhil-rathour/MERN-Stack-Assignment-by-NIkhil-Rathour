@@ -23,7 +23,7 @@ RESTful API for task management with user authentication built with Node.js, Exp
    npm install
    ```
 
-2. **Environment variables** (`.env.example`):
+2. **Environment variables** (`.env`):
    ```env
    MONGO_URI=mongodb://localhost:27017/taskmanagement
    JWT_SECRET=your_jwt_secret_key
